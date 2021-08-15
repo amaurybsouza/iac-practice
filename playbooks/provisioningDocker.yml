@@ -5,5 +5,5 @@
   gather_facts: false
   remote_user: ubuntu
   roles:
-    - nginx
+    - docker
 ...
