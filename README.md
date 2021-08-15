@@ -1,6 +1,6 @@
-# Terraform & Ansible: The power of automation
+# Terraform & Ansible: Deep dive into IaC
 
-Using Terraform to provision a EC2 instance on AWS and Ansible to install Docker
+Motivated by the Docker course from LinuxTips, I did a bit automation to provision an infrastructure on AWS and then use Ansible to install Docker on an EC2 instance.
 
 ## Table of Contents
 - [Requirements](#requirements)
