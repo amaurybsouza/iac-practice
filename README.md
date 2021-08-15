@@ -1,4 +1,4 @@
-# How to install Docker on EC2 instance using Terraform and Ansible?
+# Terraform & Ansible: The power of automation
 
 Provisioning a EC2 instance at AWS Cloud with Terraform to install Docker app with Ansible.
 
