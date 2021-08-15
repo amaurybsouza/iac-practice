@@ -2,6 +2,24 @@
 
 Provisioning a EC2 instance at AWS Cloud with Terraform to install Docker app with Ansible.
 
+## Table of Contents
+- Requirements
+- How does it work?
+- Setup AWS credentials
+- Usage
+- Contributing
+
+## Requirements
+
+- Ansible
+- Terraform
+- AWS CLI
+- Linux CLI 
+
+## How does it work?
+
+Basically, the Terraform will create the EC2 instance, a Security Group on AWS Cloud and the Ansible will be invoked via Terraform resources (local-exec) to call Ansible Roles for then install the Docker app on EC2 instance.
+
 ## Setup AWS credentials
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
