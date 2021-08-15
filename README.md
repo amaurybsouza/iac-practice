@@ -61,6 +61,8 @@ $ ansible-galaxy init docker
 
 ## Create the Terraform files
 
+- According to the best practices from the Terraform documentation, is necessary create several files ".tf" to keep the environment working fine, the Terraform will read all files ".tf" and will provision on the AWS Cloud.
+
 - provider.tf
 - securityGroups.tf
 - ec2Intance.tf
