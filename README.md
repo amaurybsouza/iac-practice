@@ -59,7 +59,7 @@ resource "aws_key_pair" "deployer" {
 $ ansible-galaxy init docker
 ```
 
-## Create the Terraform files ".tf"
+## Create the Terraform files
 
 - provider.tf
 - securityGroups.tf
