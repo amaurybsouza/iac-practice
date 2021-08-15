@@ -1,8 +1,8 @@
-# Provisioning AWS resources using Terraform a& Ansible
+# Provisioning AWS resources using Terraform & Ansible
 
-Foobar is a Python library for dealing with word pluralization.
+I would like to you the way to provisioning some resources using Terraform and Ansible together on AWS Cloud.
 
-## Installation
+## Setup AWS credentials
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
