@@ -1,6 +1,6 @@
-# Provisioning AWS resources using Terraform & Ansible
+# How to install Docker on EC2 instance using Terraform and Ansible?
 
-I would like to you the way to provisioning some resources using Terraform and Ansible together on AWS Cloud.
+Provisioning a EC2 instance at AWS Cloud with Terraform to install Docker app with Ansible.
 
 ## Setup AWS credentials
 
