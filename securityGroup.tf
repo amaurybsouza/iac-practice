@@ -10,10 +10,9 @@ resource "aws_security_group" "server" {
   } ]
 
   egress = [ {
-    cidr_blocks = [ "0.0.0.0/0" ]
     from_port = 0
-    protocol = "-1"
-    security_groups = [ "value" ]
     to_port = 0
+    protocol = "-1"
+    cidr_blocks = [ "0.0.0.0/0" ]
   } ]
 }
