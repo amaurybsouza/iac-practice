@@ -1,6 +1,6 @@
 # Terraform & Ansible: The power of automation
 
-Provisioning a EC2 instance at AWS Cloud with Terraform to install Docker app with Ansible.
+Using Terraform to provision a EC2 instance on AWS and Ansible to install Docker
 
 ## Table of Contents
 - Requirements
@@ -11,6 +11,7 @@ Provisioning a EC2 instance at AWS Cloud with Terraform to install Docker app wi
 
 ## Requirements
 
+- AWS Account 
 - Ansible
 - Terraform
 - AWS CLI
