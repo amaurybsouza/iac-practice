@@ -1,6 +1,6 @@
 # Terraform & Ansible: Deep dive into IaC
 
-Motivated by the LinuxTips docker course, I did a little automation to provision an infrastructure on AWS and then use Ansible to install Docker on an EC2 instance.
+Motivated by the Docker course from LinuxTips, I did a little automation to provision an infrastructure on AWS and then use Ansible to install Docker on an EC2 instance.
 My plan is always provision new resources in the AWS Cloud and write some code using Terraform and Ansible with CI/CD tools.
 
 ## Table of Contents
@@ -50,19 +50,35 @@ resource "aws_key_pair" "deployer" {
 }
 ```
 
+## Defining the Ansible Roles
+
+- It's the time to create the Ansible Roles:
+
+```yml
+$ ansible-galaxy init docker
+```
+
+## Create the Terraform files ".tf"
+
+- provider.tf
+- securityGroups.tf
+- ec2Intance.tf
+
 ## Terraform CLI Usage
 
+- Main commands:
+
 ```
-Main commands:
   init          Prepare your working directory for other commands
   validate      Check whether the configuration is valid
   plan          Show changes required by the current configuration
   apply         Create or update infrastructure
   destroy       Destroy previously-created infrastructure
 ```
-```
+
 - Execute these commands after get completed before steps:
 
+```
 $ terraform init
 $ terraform plan
 $ terraform apply
