@@ -53,7 +53,7 @@ resource "aws_key_pair" "deployer" {
 
 ## Defining the Ansible Roles
 
-- It's the time to create the Ansible Roles:
+It's the time to create the Ansible Roles:
 
 ```yml
 $ ansible-galaxy init docker
@@ -61,7 +61,7 @@ $ ansible-galaxy init docker
 
 ## Create the Terraform files
 
-- According to the best practices from the Terraform documentation, is necessary create several files ".tf" to keep the environment working fine, the Terraform will read all files ".tf" and will provision on the AWS Cloud.
+According to the best practices from the Terraform documentation, is necessary create several files ".tf" to keep the environment working fine, the Terraform will read all files ".tf" and will provision on the AWS Cloud.
 
 - provider.tf
 - securityGroups.tf
@@ -69,7 +69,7 @@ $ ansible-galaxy init docker
 
 ## Terraform CLI Usage
 
-- Main commands:
+Main commands:
 
 ```
   init          Prepare your working directory for other commands
@@ -79,7 +79,7 @@ $ ansible-galaxy init docker
   destroy       Destroy previously-created infrastructure
 ```
 
-- Execute these commands after get completed before steps:
+Execute these commands after get completed before steps:
 
 ```
 $ terraform init
