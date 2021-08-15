@@ -1,0 +1,12 @@
+---
+- name: Install Docker on the machine
+  shell: |
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    DRY_RUN=1 sh ./get-docker.sh
+    sudo sh get-docker.sh
+
+- name: Ensure Docker is running
+  systemd:
+    name: docker
+    state: started
+...

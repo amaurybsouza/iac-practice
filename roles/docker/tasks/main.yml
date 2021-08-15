@@ -1,2 +1,4 @@
 ---
 # tasks file for docker
+- include: upgrade.yml
+- include: installDocker.yml

@@ -1,17 +1,9 @@
 ---
-- name: teste
+- name: This roles will install Docker on EC2 Instance on AWS
   hosts: all
   become: true
   gather_facts: false
-  tasks:
-    - name: teste
-      shell:
-        mkdir /etc/teste
-    - name: teste
-      command:
-        cat /etc/hosts
-    - name: teste
-      apt: 
-        name: nmap
-      
+  remote_user: ubuntu
+  roles:
+    - nginx
 ...
