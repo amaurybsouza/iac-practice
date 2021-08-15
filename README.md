@@ -4,8 +4,8 @@ Motivated by the Docker course from LinuxTips, I did a bit automation to provisi
 
 ## Table of Contents
 - [Requirements](#requirements)
-- How does it work?
-- Setup AWS credentials
+- [How does it work?](#how-does-it-work)
+- [Setup AWS credentials](#setup-aws-credentials)
 - Usage
 - Contributing
 
@@ -19,14 +19,18 @@ Motivated by the Docker course from LinuxTips, I did a bit automation to provisi
 
 ## How does it work?
 
-Basically, the Terraform will create the EC2 instance, a Security Group on AWS Cloud and the Ansible will be invoked via Terraform resources (local-exec) to call Ansible Roles for then install the Docker app on EC2 instance.
+Basically, the Terraform will create some resources on AWS, such as, EC2, SG and the Ansible will be invoked via Terraform resources (local-exec) to call Ansible Roles for then to install the Docker app on EC2 instance.
 
 ## Setup AWS credentials
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the AWS Documentation to setup your AWS Credentials, basically you have some ways to do this, for example via credentials file or environment variables:
 
-```bash
-pip install foobar
+- In my case I used the ```~/.aws/credentials``` file to create my credentials:
+
+```
+[default]
+aws_access_key_id=AKIAIOSFODNN7EXAMPLE
+aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 
 ## Usage
