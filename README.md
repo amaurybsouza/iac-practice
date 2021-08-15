@@ -8,7 +8,7 @@ My plan is provision new resources on the AWS Cloud and write code using Terrafo
 - [How does it work?](#how-does-it-work)
 - [Setup AWS credentials](#setup-aws-credentials)
 - [Create a AWS Key pairs](#create-a-AWS-Key-pairs)
-- [Create the Terraform files ".tf"](#create-the-terraform-files)
+- [Create the Terraform files ".tf"](#create-the-terraform-files-".tf")
 - [Terraform CLI Usage](#terraform-cli-usage)
 - [Contributing](#contributing)
 
