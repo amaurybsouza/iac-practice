@@ -7,7 +7,8 @@ My plan is always provision new resources in the AWS Cloud and write some code u
 - [Requirements](#requirements)
 - [How does it work?](#how-does-it-work)
 - [Setup AWS credentials](#setup-aws-credentials)
-- Usage
+- [Create a AWS Key pairs](#create-a-AWS-Key-pairs)
+- [Terraform CLI Usage](#terraform-cli-usage)
 - Contributing
 
 ## Requirements
@@ -34,19 +35,38 @@ aws_access_key_id=AKIAIOSFODNN7EXAMPLE
 aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ```
 
-## Usage
+## Create a AWS Key pairs
 
-```python
-import foobar
+Now you can create your Key pairs on AWS following the AWS Documentation below:
 
-# returns 'words'
-foobar.pluralize('word')
+- [Create AWS Key pairs](https://docs.aws.amazon.com/pt_br/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 
-# returns 'geese'
-foobar.pluralize('goose')
+Remember you can create a Terraform resource to provision automatically:
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```
+resource "aws_key_pair" "deployer" {
+  key_name   = "deployer-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD3F6tyPEFEzV0LX3X8BsXdMsQz1x2cEikKDEY0aIj41qgxMCP/iteneqXSIFZBp5vizPvaoIR3Um9xK7PGoW8giupGn+EPuxIA4cDM4vzOqOkiMPhz5XK0whEjkVzTo4+S0puvDZuwIsdiW9mxhJc7tgBNL0cYlWSYVkz4G/fslNfRPW5mYAM49f4fhtxPb5ok4Q2Lg9dPKVHO/Bgeu5woMc7RY0p1ej6D4CKFE6lymSDJpW0YHX/wqE9+cfEauh7xZcG0q9t2ta6F6fmX0agvpFyZo8aFbXeUBr7osSCJNgvavWbM/06niWrOvYX2xwWdhXmXSrbX8ZbabVohBK41 email@example.com"
+}
+```
+
+## Terraform CLI Usage
+
+```
+Main commands:
+  init          Prepare your working directory for other commands
+  validate      Check whether the configuration is valid
+  plan          Show changes required by the current configuration
+  apply         Create or update infrastructure
+  destroy       Destroy previously-created infrastructure
+```
+```
+- Execute these commands after get completed before steps:
+
+$ terraform init
+$ terraform plan
+$ terraform apply
+$ terraform dstroy
 ```
 
 ## Contributing
