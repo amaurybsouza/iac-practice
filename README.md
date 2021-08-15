@@ -1,4 +1,4 @@
-# Foobar
+# Provisioning a EC2 instance with Terraform and deploying a Docker using Ansible
 
 Foobar is a Python library for dealing with word pluralization.
 
