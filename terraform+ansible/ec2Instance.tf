@@ -1,6 +1,6 @@
 resource "aws_instance" "server" {
-  ami                         = "ami-09e67e426f25ce0d7"
-  subnet_id                   = "subnet-cb298bfa"
+  ami                         = "ami-09e67e426f25ce0d8"
+  subnet_id                   = "subnet-cb288cfb"
   instance_type               = "t2.micro"
   associate_public_ip_address = true
   security_groups             = [aws_security_group.server.id]
