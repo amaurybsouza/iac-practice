@@ -3,7 +3,7 @@
 Using Terraform to provision a EC2 instance on AWS and Ansible to install Docker
 
 ## Table of Contents
-- Requirements(https://github.com/amaurybsouza/IaC-Tutorials/edit/main/README.md)
+- [Requirements](https://github.com/amaurybsouza/IaC-Tutorials/edit/main/README.md)
 - How does it work?
 - Setup AWS credentials
 - Usage
