@@ -3,7 +3,7 @@
 Motivated by the Docker course from @LINUXtips, I did a bit automation to provision an infrastructure as Code on AWS and then use Ansible to install Docker on an EC2 instance.
 My plan is provision new resources on the AWS Cloud and write code using Terraform and Ansible with CI/CD tools to help all professionals who are starting their DevOps journey.
 
-## `Table of Contents`
+## Table of Contents
 - [Requirements](#requirements)
 - [How does it work?](#how-does-it-work)
 - [Setup AWS credentials](#setup-aws-credentials)
@@ -12,7 +12,7 @@ My plan is provision new resources on the AWS Cloud and write code using Terrafo
 - [Terraform CLI Usage](#terraform-cli-usage)
 - [Contributing](#contributing)
 
-## `Requirements`
+## Requirements
 
 - AWS Account 
 - Ansible
