@@ -85,7 +85,7 @@ Execute these commands after get completed before steps:
 $ terraform init
 $ terraform plan
 $ terraform apply
-$ terraform dstroy
+$ terraform destroy
 ```
 
 ## Contributing
